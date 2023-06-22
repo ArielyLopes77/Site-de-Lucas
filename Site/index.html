@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title> Gatinhos fofos </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+      .Galeria {
+        display: flex;
+      }
+      .btn-primary{
+        margin-bottom: 8px;
+        margin-top: 13px;
+      }
+      .Galeria img {
+        width: 400px;
+        border: 1px solid rgb(255, 255, 255);
+        margin-right: 10px;
+      }
+
+      .conteudo {
+        margin-top: 20px;
+      }
+
+      .zoom {
+      transition: .2s transform;
+      margin-bottom: 10px;
+      }
+
+      .zoom:hover {
+      transform: scale(1.05)
+      }
+      
+    </style>
+</head>
+<body class="container mt-2">
+
+<br>
+  <!-- <NavBar> -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Moda Fashion</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Roupas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Marcas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tamanho</a>
+            </li>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    
+
+<br>
+  <!-- </NavBar> -->
+
+  <!-- ---------------- -->
+
+  <!-- <SlideShow/Carousel> -->
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imgs/carrossel.png" class="d-block w-100" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="imgs/carrossel2.png" class="d-block w-100" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="imgs/carrossel03.png" class="d-block w-100" alt="">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+  
+    </button>
+
+  </div>
+<br>
+  <!-- </SlideShow/Carousel> -->
+  
+  <!-- ---------------- -->
+
+  <!-- <Grid com  Zoom> -->
+    <div class="container mt-5">
+      <div class="row">
+
+        <div class="col-md-4">
+          <img src="imgs/cnjj.png" class="img-fluid zoom" alt="Imagem 1">
+        </div>
+
+        <div class="col-md-4">
+          <img src="imgs/cnjlilas.png" class="img-fluid zoom" alt="Imagem 2">
+        </div>
+
+        <div class="col-md-4">
+          <img src="imgs/conj.png" class="img-fluid zoom" alt="Imagem 3">
+        </div>
+
+        <div class="col-md-4">
+          <img src="imgs/conjj.png" class="img-fluid zoom" alt="Imagem 4">
+        </div>
+
+        <div class="col-md-4">
+          <img src="imgs/conjunto.png" class="img-fluid zoom" alt="Imagem 5">
+        </div>
+
+        <div class="col-md-4">
+          <img src="imgs/conjuntolilas.png" class="img-fluid zoom" alt="Imagem 6">
+        </div>
+
+        <div class="col-md-4">
+          <img src="imgs/a3955224a15aaca45aa30bead1043cab.jpg" class="img-fluid zoom" alt="Imagem 7">
+        </div>
+
+        <div class="col-md-4">
+          <img src="imgs/a54624e779aaef978a4eaeffdf4fd207.jpg" class="img-fluid zoom" alt="Imagem 8">
+        </div>
+
+        <div class="col-md-4">
+          <img src="imgs/b516baa551794675fb94778e07ec980c.jpg" class="img-fluid zoom" alt="Imagem 9">
+        </div>
+
+      </div>
+    </div>
+  <!-- </Grid com  Zoom> -->
+
+  <!-- ---------------- -->
+
+  
+    
+    <br>
+
+      <!-- ---------------- -->  
+
+      <!-- <Formulário de contato ou formulário de login> -->
+        <div class="conteudo">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Endereço de email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+              <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Senha</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Clique em mim</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+          <br>
+
+      <!-- </Formulário de contato ou formulário de login> -->
+    
+      <!-- ---------------- -->
+
+  <!-- <Tabela> -->
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Roupas</th>
+          <th scope="col">Marca</th>
+          <th scope="col">Tamanho</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Conjunto</td>
+          <td>Dudalina</td>
+          <td>M</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Conjunto</td>
+          <td>Cavalera</td>
+          <td>P</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Conjunto</td>
+          <td>Cris Barros</td>
+          <td>G</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- </Tabela> -->
+
+  <!-- ---------------- -->
+
+  <!-- <Card> -->
+
+        <div class="row">
+            <div class="col-4">
+
+              <div class="card" style="width: 18rem;">
+                <img src="imgs/dudalina.webp" class="card-img-top" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Conjunto</h5>
+                  <p class="card-text">Dudalina</p>
+                  <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+              </div>
+            </div>
+
+          <div class="col-4">
+
+            <div class="card" style="width: 18rem;">
+              <img src="imgs/cavalera.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Conjunto</h5>
+                <p class="card-text">	Cavalera</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <img src="imgs/crisbarros.webp" class="card-img-top" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Conjunto</h5>
+              <p class="card-text">	Cris Barros</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+      </div>
+    
+      <!-- </Card> -->
+
+      <!-- ---------------- -->
+
+      <!-- <Modal> -->
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Informações extras
+        </button>
+        
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Moda Fashion</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Bem-vindo à nossa loja de conjuntos femininos, o destino perfeito para as mulheres que desejam adicionar estilo e elegância ao seu guarda-roupa. Nossa loja é um paraíso de moda, repleto de uma vasta seleção de conjuntos deslumbrantes projetados para a mulher moderna.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ok</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      <!-- </Modal> -->
+
+      <!-- ---------------- -->
+
+      <!-- <Rodapé> -->
+        <footer class="container-fluid text-white bg-dark">
+          <div class="row pt-5 pb-5">
+              <section class="col-md-5">
+                <h5>Marcas</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link text-white">Dudalina</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link text-white">Cavalera</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link text-white">Cris Barros</a>
+                  </li>
+                </ul>
+              </section>
+
+              <section class="col-md-5">
+                <h5>Contato</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link text-white">Tel: (88) 9 9999-9999</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link text-white">WhatsApp: (99) 9 9999-9999</a>
+                  </li>
+
+                </ul>
+              </section>
+
+              <section class="col-md-2">
+                <a href="#" class="text-white">Voltar ao Topo!</a>
+              </section>
+          </div>
+        </footer>
+        
+      <!-- </Rodapé> -->
+
+      <!-- ---------------- -->
+
+      <!-- <Botão para o topo> -->
+        <button onclick="scrollToTop()" id="scrollBtn" class="btn btn-primary" title="Voltar ao Topo">
+          <i class="bi bi-arrow-up-circle-fill" style="font-size: 50px;"></i>
+        </button>
+      <!--</Botão para o topo> -->
+
+      <!-- <Site Responsivo>
+              Concluído!    
+      </Site Responsivo> -->
+
+      <script src="bootstrap/js/bootstrap.bundle.js"></script>
+      <script src="manin.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+</body> 
+</html>
